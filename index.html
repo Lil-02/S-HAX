@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Demonstration for hax-search">
+
+  <style>
+    :root {
+      --ddd-spacing-2: 16px;
+      --ddd-border-md: 2px solid #ddd;
+      --ddd-radius-lg: 8px;
+      --ddd-boxShadow-sm: 0px 4px 8px rgba(0, 0, 0, 0.15);
+      --ddd-font-size-l: 1.2rem; 
+      --ddd-accent-2: #f5f5f5;
+      --ddd-primary-17: #333;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("https://oer.hax.psu.edu/bto108/sites/haxcellence/files/HAX.psu%20World%20changer-circle1.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    #demo {
+      margin: var(--ddd-spacing-2);
+      padding: var(--ddd-spacing-2);
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: var(--ddd-radius-lg);
+      box-shadow: var(--ddd-boxShadow-sm);
+    }
+
+    hax-search {
+      margin: var(--ddd-spacing-2);
+      border: var(--ddd-border-md);
+      border-radius: var(--ddd-radius-lg);
+      box-shadow: var(--ddd-boxShadow-sm);
+      padding: var(--ddd-spacing-2);
+      background-color: var(--ddd-accent-2);
+      color: var(--ddd-primary-17);
+      display: block;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    hax-search:hover {
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #444;
+    }
+  </style>
+  <title>HAX Search</title>
+</head>
+
+<body>
+  <div id="demo">
+    <h1>HAX Search Component</h1>
+    <h2>Interactive Search for HAX Sites</h2>
+    <!-- hax-search component will load here with custom properties -->
+    <hax-search></hax-search>
+  </div>
+  
+  <script type="module" src="./hax-search.js"></script>
+</body>
+
+</html>
